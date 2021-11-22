@@ -1,0 +1,294 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/></edmx:Reference>
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/></edmx:Reference>
+	<edmx:Reference
+		Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/></edmx:Reference>
+	<edmx:Reference Uri="../../../sap/zsd_c_header_cds/$metadata"><edmx:Include Namespace="ZSD_C_HEADER_CDS" Alias="SAP"/></edmx:Reference>
+	<edmx:DataServices>
+		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="zsd_c_header_cds_van.v1">
+			<Annotations Target="ZSD_C_HEADER_CDS.I_Customer_VHType/CustomerAccountGroup"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.I_Customer_VHType/AuthorizationGroup"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.I_Customer_VHType/IsBusinessPurposeCompleted"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.I_DraftAdministrativeDataType/DraftUUID"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.I_DraftAdministrativeDataType/DraftEntityType"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.I_DraftAdministrativeDataType/DraftAccessType"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.I_DraftAdministrativeDataType/ProcessingStartDateTime"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.I_DraftAdministrativeDataType/DraftIsKeptByUser"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.I_DraftAdministrativeDataType/EnqueueStartDateTime"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.I_DraftAdministrativeDataType/DraftIsCreatedByMe"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.I_DraftAdministrativeDataType/DraftIsLastChangedByMe"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.I_DraftAdministrativeDataType/DraftIsProcessedByMe"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.I_DraftAdministrativeDataType/CreatedByUserDescription"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.I_DraftAdministrativeDataType/LastChangedByUserDescription"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.I_DraftAdministrativeDataType/InProcessByUserDescription"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_headerType/DraftUUID"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_headerType/HasActiveEntity"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_headerType/HasDraftEntity"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_headerType/IsActiveEntity"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_headerType/DraftEntityCreationDateTime"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_headerType/DraftEntityLastChangeDateTime"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_headerType/Activation_ac"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_headerType/Createref_ac"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_headerType/Edit_ac"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_headerType/Preparation_ac"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_headerType/Validation_ac"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_headerType/netValue_fc"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_headerType/requestedDeliveryDate_fc"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_headerType/btn_condition"><Annotation Term="Common.SemanticObject" String="ZMDPMSGOUTPUT"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_headerType/btn_price"><Annotation Term="Common.SemanticObject" String="ZMDPPRICECONDI"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_headerType/btn_create_ref"><Annotation Term="Common.SemanticObject" String="ZMDPCREATEREFE"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_headerType">
+				<Annotation Term="UI.Facets">
+					<Collection>
+						<Record Type="UI.CollectionFacet"><PropertyValue Property="Label" String="Header data"/><PropertyValue Property="ID" String="Header"/>
+							<PropertyValue Property="Facets">
+								<Collection>
+									<Record Type="UI.ReferenceFacet"><PropertyValue Property="Label" String="Document Information"/><PropertyValue Property="ID" String="HeaderData"/><PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#HeaderData"/></Record>
+									<Record Type="UI.ReferenceFacet"><PropertyValue Property="Label" String="Organizational Information"/><PropertyValue Property="ID" String="OrgInfo"/><PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#OrgInfo"/></Record>
+									<Record Type="UI.ReferenceFacet"><PropertyValue Property="Label" String="Customer Information"/><PropertyValue Property="ID" String="CustomerInfo"/><PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#CustomerInfo"/></Record>
+									<Record Type="UI.ReferenceFacet"><PropertyValue Property="Label" String="Internal Information"/><PropertyValue Property="ID" String="InternalInfo"/><PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#InternalInfo"/></Record>
+								</Collection>
+							</PropertyValue>
+						</Record>
+						<Record Type="UI.CollectionFacet"><PropertyValue Property="Label" String="Texts"/><PropertyValue Property="ID" String="Text"/>
+							<PropertyValue Property="Facets">
+								<Collection>
+									<Record Type="UI.ReferenceFacet"><PropertyValue Property="Label" String="Text Information"/><PropertyValue Property="ID" String="TextInfo"/><PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#TextInfo"/></Record>
+									<Record Type="UI.ReferenceFacet"><PropertyValue Property="Label" String="Text Content"/><PropertyValue Property="ID" String="TextCont"/><PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#TextCont"/></Record>
+								</Collection>
+							</PropertyValue>
+						</Record>
+						<Record Type="UI.ReferenceFacet"><PropertyValue Property="Label" String="Items"/><PropertyValue Property="ID" String="Items"/><PropertyValue Property="Target" AnnotationPath="to_items/@UI.LineItem"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.FieldGroup" Qualifier="CustomerInfo">
+					<Record>
+						<PropertyValue Property="Data">
+							<Collection>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="soldTo"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="shipTo"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="customerReference"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.FieldGroup" Qualifier="HeaderData">
+					<Record>
+						<PropertyValue Property="Data">
+							<Collection>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="orderNumber"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="orderType"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="netValue"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="requestedDeliveryDate"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.FieldGroup" Qualifier="OrgInfo">
+					<Record>
+						<PropertyValue Property="Data">
+							<Collection>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="salesOrganization"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="distributionChannel"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="salesOffice"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="salesGroup"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.HeaderInfo">
+					<Record><PropertyValue Property="TypeName" String="Sales Order"/><PropertyValue Property="TypeNamePlural" String="Sales Orders"/>
+						<PropertyValue Property="Title">
+							<Record Type="UI.DataField"><PropertyValue Property="Label" String="Sales Order"/></Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.Identification">
+					<Collection>
+						<Record Type="UI.DataFieldForIntentBasedNavigation"><PropertyValue Property="Label" String="Price Condition"/><PropertyValue Property="SemanticObject" String="ZMDPPRICECONDI"/><PropertyValue Property="Action" String="display"/><PropertyValue Property="RequiresContext" Bool="false"/></Record>
+						<Record Type="UI.DataFieldForIntentBasedNavigation"><PropertyValue Property="Label" String="Message Output"/><PropertyValue Property="SemanticObject" String="ZMDPMSGOUTPUT"/><PropertyValue Property="Action" String="display"/><PropertyValue Property="RequiresContext" Bool="false"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="salesOrganization"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="orderType"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="netValue"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="distributionChannel"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="salesOffice"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="salesGroup"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="soldTo"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="shipTo"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="customerReference"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="createdBy"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="createdOn"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="changedOn"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="requestedDeliveryDate"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataFieldForIntentBasedNavigation"><PropertyValue Property="Label" String="Message Output"/><PropertyValue Property="SemanticObject" String="ZMDPMSGOUTPUT"/><PropertyValue Property="Action" String="display"/><PropertyValue Property="RequiresContext" Bool="false"/></Record>
+						<Record Type="UI.DataFieldForIntentBasedNavigation"><PropertyValue Property="Label" String="Price Condition"/><PropertyValue Property="SemanticObject" String="ZMDPPRICECONDI"/><PropertyValue Property="Action" String="display"/><PropertyValue Property="RequiresContext" Bool="false"/></Record>
+						<Record Type="UI.DataFieldForIntentBasedNavigation"><PropertyValue Property="Label" String="Create With Reference"/><PropertyValue Property="SemanticObject" String="ZMDPCREATEREFE"/><PropertyValue Property="Action" String="display"/><PropertyValue Property="RequiresContext" Bool="false"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="orderNumber"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="salesOrganization"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Sold-to Patry"/><PropertyValue Property="Value" Path="soldTo"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="customerReference"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="netValue"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="createdBy"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="createdOn"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="changedOn"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="createdAt"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="documanetDate"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="currency"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.SelectionFields">
+					<Collection>
+						<PropertyPath>orderNumber</PropertyPath>
+						<PropertyPath>orderType</PropertyPath>
+						<PropertyPath>salesOrganization</PropertyPath>
+						<PropertyPath>distributionChannel</PropertyPath>
+						<PropertyPath>salesOffice</PropertyPath>
+						<PropertyPath>salesGroup</PropertyPath>
+						<PropertyPath>soldTo</PropertyPath>
+						<PropertyPath>shipTo</PropertyPath>
+						<PropertyPath>customerReference</PropertyPath>
+						<PropertyPath>createdBy</PropertyPath>
+						<PropertyPath>createdOn</PropertyPath>
+						<PropertyPath>changedOn</PropertyPath>
+						<PropertyPath>requestedDeliveryDate</PropertyPath>
+					</Collection>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_itemType/DraftUUID"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_itemType/HasActiveEntity"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_itemType/HasDraftEntity"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_itemType/IsActiveEntity"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_itemType/DraftEntityCreationDateTime"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_itemType/DraftEntityLastChangeDateTime"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_itemType/ParentDraftUUID"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_itemType/Preparation_ac"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_itemType/Validation_ac"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_itemType/itemDescription_fc"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZSD_C_HEADER_CDS.zsd_c_itemType">
+				<Annotation Term="UI.Facets">
+					<Collection>
+						<Record Type="UI.ReferenceFacet"><PropertyValue Property="Label" String="Item Information"/><PropertyValue Property="ID" String="ItemData"/><PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#ItemData"/></Record>
+						<Record Type="UI.CollectionFacet"><PropertyValue Property="Label" String="Texts"/><PropertyValue Property="ID" String="Text"/>
+							<PropertyValue Property="Facets">
+								<Collection>
+									<Record Type="UI.ReferenceFacet"><PropertyValue Property="Label" String="Text Information"/><PropertyValue Property="ID" String="TextInfo"/><PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#TextInfo"/></Record>
+									<Record Type="UI.ReferenceFacet"><PropertyValue Property="Label" String="Text Content"/><PropertyValue Property="ID" String="TextCont"/><PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#TextCont"/></Record>
+								</Collection>
+							</PropertyValue>
+						</Record>
+						<Record Type="UI.ReferenceFacet"><PropertyValue Property="Label" String="Internal Information"/><PropertyValue Property="ID" String="InternalInfo"/><PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#InternalInfo"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.FieldGroup" Qualifier="InternalInfo">
+					<Record>
+						<PropertyValue Property="Data">
+							<Collection>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="incotermsLoc"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="termPayment"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="rejReason"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="incoterms"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="profitCenter"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="AccAsigntMat"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="netWeight"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="weightUnit"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="grossWeight"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="itemVolume"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="volumeUnit"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.FieldGroup" Qualifier="ItemData">
+					<Record>
+						<PropertyValue Property="Data">
+							<Collection>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="orderItem"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="material"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="itemDescription"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="itemShortDescription"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="orderQuantity"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="salesUnit"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="netValue"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="createdBy"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="createdOn"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="createdAt"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="currency"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="changedOn"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="plant"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.HeaderInfo">
+					<Record><PropertyValue Property="TypeName" String="Sales Order Item"/><PropertyValue Property="TypeNamePlural" String="Sales Order Items"/>
+						<PropertyValue Property="Title">
+							<Record Type="UI.DataField"><PropertyValue Property="Label" String="Sales Order Item"/></Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.Identification">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Item Number"/><PropertyValue Property="Value" Path="orderItem"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Material"/><PropertyValue Property="Value" Path="material"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String=" Material Description"/><PropertyValue Property="Value" Path="itemDescription"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Short Description"/><PropertyValue Property="Value" Path="itemShortDescription"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Quantity"/><PropertyValue Property="Value" Path="orderQuantity"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Sales Unit"/><PropertyValue Property="Value" Path="salesUnit"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Net Value"/><PropertyValue Property="Value" Path="netValue"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Created By"/><PropertyValue Property="Value" Path="createdBy"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Created On"/><PropertyValue Property="Value" Path="createdOn"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Created At"/><PropertyValue Property="Value" Path="createdAt"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Currency"/><PropertyValue Property="Value" Path="currency"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Changed On"/><PropertyValue Property="Value" Path="changedOn"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Plant"/><PropertyValue Property="Value" Path="plant"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Incoterms Location"/><PropertyValue Property="Value" Path="incotermsLoc"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Terms of payment key"/><PropertyValue Property="Value" Path="termPayment"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Reject Reason"/><PropertyValue Property="Value" Path="rejReason"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Incoterms"/><PropertyValue Property="Value" Path="incoterms"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Profit Center"/><PropertyValue Property="Value" Path="profitCenter"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Account Assignment Group for Material"/><PropertyValue Property="Value" Path="AccAsigntMat"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Net Weight of the Item"/><PropertyValue Property="Value" Path="netWeight"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Weight Unit"/><PropertyValue Property="Value" Path="weightUnit"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Gross Weight of the Item"/><PropertyValue Property="Value" Path="grossWeight"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Volume of the item"/><PropertyValue Property="Value" Path="itemVolume"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Volume unit"/><PropertyValue Property="Value" Path="volumeUnit"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataFieldForAction"><PropertyValue Property="Label" String="+ Add New Line"/><PropertyValue Property="Action" String="ZSD_C_HEADER_CDS.ZSD_C_HEADER_CDS_Entities/zsd_c_itemAdd_new_line"/><PropertyValue Property="InvocationGrouping" EnumMember="UI.OperationGroupingType/ChangeSet"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Medium"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Item Number"/><PropertyValue Property="Value" Path="orderItem"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Material"/><PropertyValue Property="Value" Path="material"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Material Description"/><PropertyValue Property="Value" Path="itemDescription"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Short Description"/><PropertyValue Property="Value" Path="itemShortDescription"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Quantity"/><PropertyValue Property="Value" Path="orderQuantity"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Sales Unit"/><PropertyValue Property="Value" Path="salesUnit"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Net Value"/><PropertyValue Property="Value" Path="netValue"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Created By"/><PropertyValue Property="Value" Path="createdBy"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Created On"/><PropertyValue Property="Value" Path="createdOn"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Created At"/><PropertyValue Property="Value" Path="createdAt"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Currency"/><PropertyValue Property="Value" Path="currency"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Changed On"/><PropertyValue Property="Value" Path="changedOn"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Plant"/><PropertyValue Property="Value" Path="plant"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Incoterms Location"/><PropertyValue Property="Value" Path="incotermsLoc"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Terms of payment key"/><PropertyValue Property="Value" Path="termPayment"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Reject Reason"/><PropertyValue Property="Value" Path="rejReason"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Incoterms"/><PropertyValue Property="Value" Path="incoterms"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Profit Center"/><PropertyValue Property="Value" Path="profitCenter"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Account Assignment Group for Material"/><PropertyValue Property="Value" Path="AccAsigntMat"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Net Weight of the Item"/><PropertyValue Property="Value" Path="netWeight"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Weight Unit"/><PropertyValue Property="Value" Path="weightUnit"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Gross Weight of the Item"/><PropertyValue Property="Value" Path="grossWeight"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Volume of the item"/><PropertyValue Property="Value" Path="itemVolume"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Volume unit"/><PropertyValue Property="Value" Path="volumeUnit"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.SelectionFields"><Collection/></Annotation>
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

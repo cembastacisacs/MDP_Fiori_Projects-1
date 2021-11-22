@@ -1,0 +1,42 @@
+{
+	"fileName": "id_1614709581016_488_propertyChange",
+	"fileType": "change",
+	"changeType": "propertyChange",
+	"moduleName": "",
+	"reference": "MdpSalesOrder.mdpsalesordercreationfasttrack.Component",
+	"packageName": "$TMP",
+	"content": {
+		"property": "width",
+		"newValue": "150em"
+	},
+	"selector": {
+		"id": "MdpSalesOrder.mdpsalesordercreationfasttrack::sap.suite.ui.generic.template.ObjectPage.view.Details::zsd_c_header--Items::Table-matStock",
+		"type": "sap.ui.table.Column",
+		"idIsLocal": false
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/MdpSalesOrder.mdpsalesordercreationfasttrack/changes/",
+	"projectId": "MdpSalesOrder.mdpsalesordercreationfasttrack",
+	"creation": "2021-03-02T18:38:12.287Z",
+	"originalLanguage": "EN",
+	"conditions": {},
+	"context": "",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.65.5",
+		"sourceChangeFileName": "",
+		"compositeCommand": ""
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"validAppVersions": {
+		"creation": "1.0.0",
+		"from": "1.0.0",
+		"to": "1.0.0"
+	},
+	"jsOnly": false,
+	"variantReference": ""
+}
